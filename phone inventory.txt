@@ -1,0 +1,315 @@
+
+import time
+import math
+
+print("Hi there! Welcome to Canada Telecommunications.")
+time.sleep(2)  # Delay for 2 second
+
+latest_models = ['SAMSUNG GALAXY S23', 'SAMSUNG GALAXY S23+', 'IPHONE SE2', 'IPHONE 14', 'IPHONE 14 PRO', 'IPHONE 14 PRO MAX']
+
+print("Our latest models:")
+time.sleep(2)  # Delay for 2 second
+
+for model in latest_models:
+        print(model)
+        time.sleep(0.5)  # Delay for 0.5 second
+
+Select_model = input("Which phone would you like to buy? ").lower()
+
+# FOR SAMSUNG GALAXY S23
+
+if Select_model == ('Samsung Galaxy S23').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            total = 919.99+ (919.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (919.99+ (919.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (919.99+ (919.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+
+      
+# FOR SAMSUNG GALAXY S23+
+
+elif Select_model == ('Samsung Galaxy S23+').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            total = 1379.99+ (1379.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (1379.99+ (1379.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (1379.99+ (1379.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+           
+        quit
+
+#FOR IPHONE SE2
+
+elif Select_model == ('Iphone SE2').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            
+            total = 429.99+ (429.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (429.99+ (429.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (429.99+ (429.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+            
+            
+        quit
+
+# FOR IPHONE 14
+
+elif Select_model == ('Iphone 14').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            total = 799.99+ (799.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (799.99+ (799.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (799.99+ (799.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+        quit
+
+#FOR IPHONE 14 PRO
+
+elif Select_model == ('Iphone 14 PRO').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            total = 999.99+ (999.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (999.99+ (999.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (999.99+ (999.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+        quit
+
+# FOR IPHONE 14 PRO MAX
+
+elif Select_model == ('Iphone 14 PRO MAX').lower():
+        print ('Great Choice!')
+        time.sleep(2) # Delay for 2 second
+        print('So the price of this phone is starting from US$919.99' )
+        time.sleep(2)  # Delay for 2 second
+        print ('Would you like to buy this phone by full payment or do you want to finance?' )
+        time.sleep(2)  # Delay for 2 second
+
+        finance_option = input("PAY/FINANCE ").lower()
+        if finance_option == ("PAY").lower(): 
+            total = 1099.99+ (1099.99/100)*13
+            print (f'Sounds Great! So your total will be US${total: .1f} (Including sales tax.)')
+            time.sleep(2)  # Delay for 2 second
+            print('Thank you for shopping with us. Hope to see you soon!')
+            time.sleep(1) # Delay for 1 second
+
+        elif finance_option == ("FINANCE").lower():
+            print("Okay! So you can finance for either for 24 months or 48 months with no extra cost.")
+            time.sleep(3)  # Delay for 3 second
+            print("How many Months do you want to finance?")
+            time.sleep(2)  # Delay for 2 second        
+        
+            
+            finance_month = input("24 / 48 ")
+        
+            if finance_month == ("24"):
+                monthly_payment = (1099.99+ (1099.99/100)*13)/24
+                print(f'So you will be Paying US${monthly_payment: .1f} or 24 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            elif finance_month == ("48"):
+                monthly_payment = (1099.99+ (1099.99/100)*13)/48
+                print(f'So you will be Paying US${monthly_payment: .1f} for 48 months')
+                time.sleep(3)  # Delay for 3 second
+                print('Thank you for shopping with us. Hope to see you soon!')
+                time.sleep(1) # Delay for 1 second
+            else:   
+                print("(Invalid Input) Please select 24 MONTHS or 48 MONTHS")  
+        else:
+            print('(Invalid Input) Please select Pay or Finance and try again.')
+
+       
+
+    
+else:
+        print("(Invalid Input) Please try again and select from available models")
+        time.sleep(2) # Delay for 2 seconds
+quit
+
+
+
+    
+
+    
+
+
+
+
